@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from lxml import html
 import re
+import sys
 def generate_html(submits):
     with open('index.html', 'wb') as file:
         file.write(b"<!DOCTYPE html>")
