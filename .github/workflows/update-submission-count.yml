@@ -1,4 +1,4 @@
-name: Update Usernames Daily
+name: Update Submission Count Daily
 on:
   schedule:
     - cron: "45 9 * * *"
