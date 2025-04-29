@@ -3,7 +3,7 @@ on:
   schedule:
     - cron: "45 9 * * *"
 jobs:
-  update-usernames:
+  update-submission-count:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
