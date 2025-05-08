@@ -17,7 +17,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
           pip install bs4
-          pip install lxml
       - name: Run track.py
         run: python track.py ${{ secrets.PASSWORD }}
       - name: Commit and push changes
