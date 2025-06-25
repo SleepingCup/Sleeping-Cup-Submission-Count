@@ -50,7 +50,7 @@ def generate_html(submits):
         file.write(b"        <center>\n")
         file.write(b"            <h1 style=\"white-space: nowrap; color: #0f0; font-family: Segoe UI; font-size: 150px;\" class=\"upper_center\">Submission Count</h1>\n")
         file.write(bytes("            <h1 style=\"white-space: nowrap; color: #fff; font-family: Consolas; font-size: 300px; letter-spacing: 50px;\" class=\"mid_center\"><span style=\"color: #777;\">00</span>{}</h1>\n".format(submits), encoding="utf-8"))
-        file.write(bytes("<h1 style=\"white-space: nowrap; color: #fff; font-family: Segoe UI; font-size: 50px\" class=\"lower_center\"><span style=\"color: #ff0;\">{:.3f} </span><span style=\"color: #0ff;\">submissions per day on average</span></h1>\n".format(submits / (datetime.now() - datetime(2024, 6, 28)).days), encoding="utf-8"))
+        file.write(bytes("<h1 style=\"white-space: nowrap; color: #fff; font-family: Segoe UI; font-size: 50px\" class=\"lower_center\"><span style=\"color: #ff0;\">{:.3f} </span><span style=\"color: #0ff;\">submissions per day on average</span></h1>\n".format(submits / (datetime.now() - datetime(2024, 6, 27)).days), encoding="utf-8"))
         file.write(b"        </center>\n")
         file.write(b"    </body>\n")
         file.write(b"</html>\n")
