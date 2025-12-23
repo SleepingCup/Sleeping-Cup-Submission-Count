@@ -67,7 +67,7 @@ response = session.post(login_url)
 if response.ok == False:
     print('Login failed!')
     sys.exit(1)
-url = 'http://8.136.99.126/p?page='
+url = 'https://www.sleepingcup.com/p?page='
 page = 0
 count = 0
 submits = 0
@@ -93,4 +93,5 @@ print('Crawled!')
 print('Problem Count:', count)
 print('Submission Count:', submits)
 generate_html(submits)
+
 
