@@ -61,12 +61,9 @@ def extract_numbers(text):
         return int(match.group(1)), int(match.group(2))
     else:
         return None, None
-login_url = 'http://8.136.99.126/login'
-username = '035966_L3'
-password = sys.argv[1]
+login_url = 'https://www.sleepingcup.com/login?uname=035966_L3&password={}&tfa=&authnChallenge='.format(sys.argv[1])
 session = requests.Session()
-payload = {'uname': username, 'password': password, 'rememberme': True}
-response = session.post(login_url, data = payload)
+response = session.post(login_url)
 if response.ok == False:
     print('Login failed!')
     sys.exit(1)
@@ -96,3 +93,4 @@ print('Crawled!')
 print('Problem Count:', count)
 print('Submission Count:', submits)
 generate_html(submits)
+
