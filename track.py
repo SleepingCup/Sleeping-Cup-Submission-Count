@@ -61,13 +61,13 @@ def extract_numbers(text):
         return int(match.group(1)), int(match.group(2))
     else:
         return None, None
-login_url = 'https://www.sleepingcup.com/login?uname=035966_L3&password={}&tfa=&authnChallenge='.format(sys.argv[1])
+login_url = 'https://scg3.piaoztsdy.cn/login?uname=035966_L3&password={}&tfa=&authnChallenge='.format(sys.argv[1])
 session = requests.Session()
 response = session.post(login_url)
 if response.ok == False:
     print('Login failed!')
     sys.exit(1)
-url = 'https://www.sleepingcup.com/p?page='
+url = 'https://scg3.piaoztsdy.cn/p?page='
 page = 0
 count = 0
 submits = 0
